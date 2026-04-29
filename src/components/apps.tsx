@@ -312,3 +312,39 @@ export function ContactApp() {
     </div>
   );
 }
+
+export function ResumeApp() {
+  const resumeUrl = '/MohamedRaafatResume.pdf';
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'MohamedRaafatResume.pdf';
+    link.click();
+  };
+
+  return (
+    <div className="app resume" id="resume">
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', gap: '1.5rem', padding: '2rem' }}>
+        <div style={{ fontSize: '4rem' }}>📄</div>
+        <h2 style={{ margin: 0 }}>Download Resume</h2>
+        <p style={{ margin: 0, opacity: 0.7, textAlign: 'center' }}>Get a copy of my latest resume in PDF format.</p>
+        <button
+          onClick={handleDownload}
+          style={{
+            padding: '0.75rem 2rem',
+            borderRadius: '8px',
+            border: 'none',
+            background: '#fff',
+            color: '#000',
+            fontSize: '1rem',
+            fontWeight: 600,
+            cursor: 'pointer',
+          }}
+        >
+          ⬇ Download PDF
+        </button>
+      </div>
+    </div>
+  );
+}

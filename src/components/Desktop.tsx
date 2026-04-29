@@ -6,7 +6,7 @@ import ParallaxBG from './ParallaxBG';
 import TopBar from './TopBar';
 import Window from './Window';
 import Dock, { DesktopIcon } from './Dock';
-import { AboutApp, ProjectsApp, ExperienceApp, SkillsApp, TerminalApp, ContactApp } from './apps';
+import { AboutApp, ProjectsApp, ExperienceApp, SkillsApp, TerminalApp, ContactApp, ResumeApp } from './apps';
 
 interface AppDef {
   id: string;
@@ -24,6 +24,7 @@ const APPS: Record<string, AppDef> = {
   skills:     { id: 'skills',     label: 'Skills',   icon: '✦', component: SkillsApp,     defaultSize: { w: 760, h: 580 }, defaultPos: { x: 240, y: 100 } },
   terminal:   { id: 'terminal',   label: 'Terminal', icon: '▶', component: TerminalApp,   defaultSize: { w: 640, h: 420 }, defaultPos: { x: 320, y: 160 } },
   contact:    { id: 'contact',    label: 'Contact',  icon: '✉', component: ContactApp,    defaultSize: { w: 700, h: 460 }, defaultPos: { x: 280, y: 90 } },
+  resume:     { id: 'resume',     label: 'Resume',   icon: '⬇', component: ResumeApp,     defaultSize: { w: 500, h: 380 }, defaultPos: { x: 300, y: 120 } },
 };
 
 interface OpenWindow {
