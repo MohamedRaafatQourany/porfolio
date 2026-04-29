@@ -94,7 +94,7 @@ export default function Desktop() {
         <div className="desk-icons">
           <DesktopIcon label="readme.md" icon="📄" onOpen={() => openApp('about')} />
           <DesktopIcon label="work/" icon="📁" onOpen={() => openApp('projects')} />
-          <DesktopIcon label="resume.pdf" icon="📑" onOpen={() => openApp('experience')} />
+          <DesktopIcon label="experience.pdf" icon="📑" onOpen={() => openApp('resume')} />
           <DesktopIcon label="terminal" icon="▶" onOpen={() => openApp('terminal')} />
         </div>
         {windows.map((w) => {
