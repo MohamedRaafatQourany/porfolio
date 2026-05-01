@@ -309,6 +309,25 @@ export function ContactApp() {
           <div className="cc-val">/MohamedRaafatQourany</div>
         </a>
       </div>
+      <div className="consult-block">
+        <div className="consult-header">
+          <div className="consult-icon">📅</div>
+          <div>
+            <div className="consult-title">Book a Free Consultation</div>
+            <div className="consult-sub">30-min call · No commitment · Remote or async</div>
+          </div>
+        </div>
+        <p className="consult-desc">
+          Have a project in mind? Need a second opinion on your front-end architecture?
+          Let's talk — pick a time and we'll figure out how I can help.
+        </p>
+        <a
+          className="consult-btn"
+          href="mailto:mohamedraafatqourany@gmail.com?subject=Consultation%20Request&body=Hi%20Mohammed%2C%0A%0AI%27d%20like%20to%20book%20a%20consultation.%0A%0AProject%20overview%3A%0A%0ABest%20time%20to%20reach%20me%3A"
+        >
+          Book via Email <span className="consult-arrow">↗</span>
+        </a>
+      </div>
     </div>
   );
 }

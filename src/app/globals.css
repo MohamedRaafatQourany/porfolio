@@ -452,6 +452,40 @@ button { font-family: inherit; cursor: pointer; }
 }
 .cf-send:hover { filter: brightness(1.1); }
 
+/* ============== App: Consultation block ============== */
+.consult-block {
+  margin-top: 20px;
+  padding: 22px;
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(221, 72, 20, 0.08), rgba(94, 39, 80, 0.12));
+}
+.consult-header {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 12px;
+}
+.consult-icon { font-size: 32px; line-height: 1; flex-shrink: 0; }
+.consult-title {
+  font-size: 16px; font-weight: 700; color: var(--ink);
+}
+.consult-sub {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-faint);
+  margin-top: 2px;
+}
+.consult-desc {
+  font-size: 13px; color: var(--ink-dim); line-height: 1.6;
+  margin: 0 0 16px;
+}
+.consult-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--mx); color: #fff;
+  text-decoration: none; font-weight: 600; font-size: 13px;
+  padding: 10px 20px; border-radius: 8px;
+  box-shadow: 0 0 20px rgba(221, 72, 20, 0.35);
+  transition: filter 0.15s;
+}
+.consult-btn:hover { filter: brightness(1.1); }
+.consult-arrow { font-size: 15px; }
+
 /* ============== Mobile Layout ============== */
 .mobile-view {
   position: fixed;
