@@ -8,6 +8,17 @@ import Window from './Window';
 import Dock, { DesktopIcon } from './Dock';
 import { AboutApp, ProjectsApp, ExperienceApp, SkillsApp, TerminalApp, ContactApp, ResumeApp } from './apps';
 
+function useMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+  return isMobile;
+}
+
 interface AppDef {
   id: string;
   label: string;
@@ -41,6 +52,8 @@ export default function Desktop() {
   const [windows, setWindows] = useState<OpenWindow[]>([]);
   const [zCounter, setZCounter] = useState(10);
   const [activeId, setActiveId] = useState<string | null>(null);
+  const [mobileApp, setMobileApp] = useState('about');
+  const isMobile = useMobile();
 
   useEffect(() => {
     if (booted) {
@@ -84,6 +97,33 @@ export default function Desktop() {
   const dockApps = Object.values(APPS).map((a) => ({ id: a.id, label: a.label, icon: a.icon }));
   const activeWindow = windows.find((w) => w.id === activeId && !w.minimized);
   const activeTitle = activeWindow ? APPS[activeWindow.appId].label : null;
+
+  if (isMobile) {
+    const MobileApp = APPS[mobileApp].component;
+    return (
+      <>
+        {!booted && <BootScreen onDone={() => setBooted(true)} />}
+        <ParallaxBG />
+        <TopBar activeWindowTitle={APPS[mobileApp].label} />
+        <div className="mobile-view">
+          <MobileApp />
+        </div>
+        <nav className="mobile-nav" aria-label="App navigation">
+          {Object.values(APPS).map((a) => (
+            <button
+              key={a.id}
+              className={`mobile-nav-item ${mobileApp === a.id ? 'active' : ''}`}
+              onClick={() => setMobileApp(a.id)}
+              aria-label={a.label}
+            >
+              <span className="mobile-nav-icon">{a.icon}</span>
+              <span className="mobile-nav-label">{a.label}</span>
+            </button>
+          ))}
+        </nav>
+      </>
+    );
+  }
 
   return (
     <>

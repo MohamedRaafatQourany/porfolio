@@ -25,13 +25,13 @@ export default function TopBar({ activeWindowTitle }: TopBarProps) {
         <span className="active-app">{activeWindowTitle || 'Finder'}</span>
       </div>
       <div className="topbar-right">
-        <span className="status">
+        <span className="status topbar-status">
           <span className="status-dot" /> Available for hire
         </span>
-        <span className="sep" />
-        <span>v4.26</span>
-        <span className="sep" />
-        <span>{date}</span>
+        <span className="sep topbar-sep-version" />
+        <span className="topbar-version">v4.26</span>
+        <span className="sep topbar-sep-date" />
+        <span className="topbar-date">{date}</span>
         <span>{time}</span>
       </div>
     </div>

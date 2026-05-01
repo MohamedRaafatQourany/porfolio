@@ -43,13 +43,13 @@ export function AboutApp() {
       </div>
       <div className="about-body">
         <p>
-          Front-End Engineer at <b>Breadfast</b>, building production-grade web applications and dashboards
+          Front-End/Product Engineer at <b>Breadfast</b>, building production-grade web applications and dashboards
           with React and TypeScript. I led the front-end for a Fintech Management System end-to-end, and
           helped migrate legacy WordPress dashboards to modern React architecture.
         </p>
         <p>
           Background in technical support and operations gives me a sharp problem-solving instinct and a
-          business-first mindset. I also freelance globally on <b>Upwork</b> (Rising Talent · 2000+ USD earned),
+          business-first mindset. I also freelance globally on <b>Upwork</b> (Rising Talent · 2000+ USD earned), Khamsat and other freelance networks,
           delivering performance-focused, responsive, accessible web products.
         </p>
         <div className="about-stats">
@@ -109,7 +109,7 @@ export function ProjectsApp() {
 }
 
 const EXPERIENCE = [
-  { co: 'Breadfast', role: 'Software Front End Engineer', date: 'Sep 2024 — Present', loc: 'Cairo, Egypt', bullets: [
+  { co: 'Breadfast', role: 'Software Front End Engineer/Product Engineer', date: 'Sep 2024 — Present', loc: 'Cairo, Egypt', bullets: [
     'Develop and maintain scalable React applications using modern JS frameworks.',
     'Led front-end for the Fintech Management System from planning to production.',
     'Migrated legacy WordPress dashboards to a modern React architecture.',

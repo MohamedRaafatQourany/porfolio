@@ -1,6 +1,6 @@
 export const SITE = {
   name: 'Raafat.os',
-  title: 'Mohammed Raafat — Front-End Engineer · React · TypeScript',
+  title: 'Mohammed Raafat',
   description:
     'Front-End Engineer at Breadfast specializing in React.js, React Native, and TypeScript. Building scalable production web applications, dashboards, and Fintech systems. Available for freelance work worldwide.',
   url: 'https://raafat.dev',

@@ -12,7 +12,7 @@ export default function Icon() {
           width: '100%',
           height: '100%',
           background: '#050a08',
-          color: '#5fff9f',
+          color: '#ff5f5f',
           fontSize: 38,
           fontWeight: 800,
           display: 'flex',
