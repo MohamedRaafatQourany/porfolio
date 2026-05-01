@@ -53,9 +53,9 @@ export function AboutApp() {
           delivering performance-focused, responsive, accessible web products.
         </p>
         <div className="about-stats">
-          <div className="stat"><div className="stat-num">4.5+</div><div className="stat-label">years experience</div></div>
-          <div className="stat"><div className="stat-num">15+</div><div className="stat-label">projects shipped</div></div>
-          <div className="stat"><div className="stat-num">6</div><div className="stat-label">freelance clients</div></div>
+          <div className="stat"><div className="stat-num">3+</div><div className="stat-label">years experience</div></div>
+          <div className="stat"><div className="stat-num">20+</div><div className="stat-label">projects shipped</div></div>
+          <div className="stat"><div className="stat-num">+10</div><div className="stat-label">freelance clients</div></div>
           <div className="stat"><div className="stat-num">∞</div><div className="stat-label">cups of coffee</div></div>
         </div>
       </div>
