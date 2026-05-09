@@ -62,10 +62,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico' },
       { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon', type: 'image/png', sizes: '64x64' },
     ],
-    apple: '/apple-icon.png',
+    apple: [{ url: '/apple-icon', sizes: '180x180', type: 'image/png' }],
+    shortcut: '/icon.svg',
   },
   manifest: '/manifest.webmanifest',
   verification: {
@@ -122,10 +123,37 @@ const websiteJsonLd = {
   inLanguage: 'en-US',
 };
 
+const profilePageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  dateCreated: '2024-01-01',
+  dateModified: new Date().toISOString().split('T')[0],
+  mainEntity: {
+    '@type': 'Person',
+    name: SITE.author,
+    identifier: 'mohammedqourany',
+    description: SITE.description,
+    jobTitle: SITE.jobTitle,
+    url: SITE.url,
+    image: `${SITE.url}/avatar.png`,
+    sameAs: [SITE.github, SITE.linkedin],
+    hasCredential: [
+      { '@type': 'EducationalOccupationalCredential', name: 'Programming with JavaScript' },
+      { '@type': 'EducationalOccupationalCredential', name: 'Front-End Development (React.js)' },
+      { '@type': 'EducationalOccupationalCredential', name: 'Mastering TypeScript 2024' },
+      { '@type': 'EducationalOccupationalCredential', name: 'Datadog 101 Developer' },
+    ],
+  },
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" dir="ltr">
       <head>
+        <meta name="geo.region" content="EG-C" />
+        <meta name="geo.placename" content="Cairo, Egypt" />
+        <meta name="geo.position" content="30.0444;31.2357" />
+        <meta name="ICBM" content="30.0444, 31.2357" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
@@ -145,6 +173,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <Script
+          id="ld-profile"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }}
         />
         {children}
       </body>

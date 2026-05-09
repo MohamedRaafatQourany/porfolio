@@ -1,10 +1,10 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const size = { width: 64, height: 64 };
+export const size = { width: 180, height: 180 };
 export const contentType = 'image/png';
 
-export default function Icon() {
+export default function AppleIcon() {
   return new ImageResponse(
     (
       <div
@@ -15,30 +15,29 @@ export default function Icon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          borderRadius: 12,
+          borderRadius: 40,
           position: 'relative',
         }}
       >
-        {/* green glow dot */}
         <div
           style={{
             position: 'absolute',
-            top: 10,
-            left: 10,
-            width: 10,
-            height: 10,
+            top: 28,
+            left: 28,
+            width: 22,
+            height: 22,
             background: '#5fff9f',
             borderRadius: '50%',
-            boxShadow: '0 0 8px #5fff9f',
+            boxShadow: '0 0 16px #5fff9f',
           }}
         />
         <span
           style={{
             color: '#d8f5e7',
-            fontSize: 26,
+            fontSize: 64,
             fontWeight: 800,
             fontFamily: 'sans-serif',
-            letterSpacing: -1,
+            letterSpacing: -2,
           }}
         >
           R<span style={{ color: '#5fff9f' }}>.os</span>
