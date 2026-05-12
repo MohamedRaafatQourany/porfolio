@@ -28,7 +28,6 @@ export const SITE = {
     'Freelance Web Developer',
     'Upwork React Developer',
     'Fintech Front-End Developer',
-    'Node.js Developer',
     'Mobile App Developer',
     'Portfolio Mohammed Raafat',
     'Hire React Developer Egypt',

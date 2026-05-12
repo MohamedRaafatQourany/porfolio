@@ -150,13 +150,6 @@ export default function HomePage() {
           <li>Framer Motion / GSAP (78%)</li>
           <li>Responsive Design / Accessibility (90%)</li>
         </ul>
-        <h3>Backend &amp; Tooling</h3>
-        <ul>
-          <li>Node.js (78%)</li>
-          <li>REST APIs (92%)</li>
-          <li>Git / CI (88%)</li>
-          <li>Datadog / Observability (70%)</li>
-        </ul>
         <h3>Certifications</h3>
         <ul>
           <li>Programming with JavaScript</li>

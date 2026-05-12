@@ -107,7 +107,6 @@ const personJsonLd = {
     'React Native',
     'TypeScript',
     'JavaScript',
-    'Node.js',
     'REST APIs',
     'Front-End Architecture',
   ],
