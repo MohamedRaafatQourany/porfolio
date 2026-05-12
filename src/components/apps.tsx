@@ -43,7 +43,7 @@ export function AboutApp() {
       </div>
       <div className="about-body">
         <p>
-          Front-End/Product Engineer at <b>Breadfast</b>, building production-grade web applications and dashboards
+          Front-End Engineer building production-grade web applications and dashboards
           with React and TypeScript. I led the front-end for a Fintech Management System end-to-end, and
           helped migrate legacy WordPress dashboards to modern React architecture.
         </p>
