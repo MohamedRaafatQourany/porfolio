@@ -33,7 +33,7 @@ export default function HomePage() {
       <section className="sr-content" id="about" aria-label="About Mohammed Raafat">
         <h2>About</h2>
         <p>
-          Front-End / Product Engineer at Breadfast, building production-grade web applications and
+          Front-End at Breadfast, building production-grade web applications and
           dashboards with React and TypeScript. Led the front-end for a Fintech Management System
           end-to-end and helped migrate legacy WordPress dashboards to modern React architecture.
           Freelancing globally on Upwork (Rising Talent · $2000+ earned) delivering performance-focused,

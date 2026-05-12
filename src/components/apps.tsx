@@ -30,7 +30,7 @@ export function AboutApp() {
         </div>
         <div className="about-meta">
           <h2 className="about-name">Mohammed Raafat</h2>
-          <p className="about-role">Front-End/Product Engineer · React · React Native · Nodejs · TypeScript</p>
+          <p className="about-role">Front-End/Product Engineer · React · React Native · TypeScript</p>
           <p className="about-loc">📍 Cairo, Egypt &nbsp;·&nbsp; 🌐 Available worldwide</p>
           <div className="about-tags">
             <span className="tag">React.js</span>
@@ -179,22 +179,19 @@ export function ExperienceApp() {
 
 const SKILLS = [
   { group: 'Core', items: [
-    { name: 'React.js', level: 95 },
-    { name: 'TypeScript', level: 90 },
-    { name: 'JavaScript (ES2024)', level: 95 },
+    { name: 'React.js', level: 80 },
+    { name: 'TypeScript', level: 80 },
+    { name: 'JavaScript', level: 80 },
     { name: 'React Native', level: 80 },
   ]},
   { group: 'Frontend', items: [
-    { name: 'HTML5 / CSS3', level: 95 },
-    { name: 'Tailwind / CSS-in-JS', level: 88 },
-    { name: 'Framer Motion / GSAP', level: 78 },
-    { name: 'Responsive / A11y', level: 90 },
+    { name: 'HTML5 / CSS3', level: 85 },
+    { name: 'Tailwind / CSS-in-JS', level: 80 },
+    { name: 'Responsive', level: 80 },
   ]},
   { group: 'Backend & Tooling', items: [
-    { name: 'Node.js', level: 78 },
-    { name: 'REST APIs', level: 92 },
-    { name: 'Git / CI', level: 88 },
-    { name: 'Datadog / Observability', level: 70 },
+    { name: 'Node.js', level: 35 },
+    { name: 'REST APIs', level: 80 },
   ]},
 ];
 
@@ -204,6 +201,8 @@ const CERTS = [
   'Mastering TypeScript — 2024 (Colt Steele)',
   'Windows Server 2012: Installation & Configuration',
   'Datadog 101 Developer',
+  'Claude 101',
+  'Claude Code'
 ];
 
 export function SkillsApp() {
