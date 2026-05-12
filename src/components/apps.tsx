@@ -30,7 +30,7 @@ export function AboutApp() {
         </div>
         <div className="about-meta">
           <h2 className="about-name">Mohammed Raafat</h2>
-          <p className="about-role">Front-End/Product Engineer · React · React Native · TypeScript</p>
+          <p className="about-role">Front-End Engineer · React · React Native · TypeScript</p>
           <p className="about-loc">📍 Cairo, Egypt &nbsp;·&nbsp; 🌐 Available worldwide</p>
           <div className="about-tags">
             <span className="tag">React.js</span>
