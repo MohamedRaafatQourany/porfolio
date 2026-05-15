@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import { SITE } from '@/lib/site';
 import './globals.css';
-
+import { Analytics } from "@vercel/analytics/next"
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
@@ -161,6 +161,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+      <Analytics/>
         <Script
           id="ld-person"
           type="application/ld+json"
